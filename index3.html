@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+
+		<script>
+			var string;
+			
+			while(true){
+				var tempString = prompt('Введите цвет','');
+				if (tempString == null || tempString == ''){
+		      	break;
+				}
+				else {
+					string = string+ ',' + tempString;
+				}
+			}
+			string = string.split(',');	
+			string.sort();
+				
+				for (var i = 0; i < string.length; i++) {
+						document.write('<li>' + string[i] + '</li>');
+					}		
+			
+		</script>
+	</ul>
+	
+</body>
+</html>
